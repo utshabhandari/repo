@@ -1,0 +1,133 @@
+<!-- 
+    Student name: Utsha Bhandari
+    student number: 2408886
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="Utsha_Bhandari_2408886.css">
+    <link rel="stylesheet" href="(2)Utsha_Bhandari_2408886.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="topbar">
+        <div class="topbarleft">
+            <h1 class="weather"> Weather <span class="report"> Report</span></h1>
+        </div>
+        <div class="topbarright">
+            <input id="search_by_city" class="search-input" type="text" placeholder="Enter Your city"></input>
+            <button class="searchBtn"><i class="fa fa-search"></i></button>
+        </div>
+
+    </div>
+    <div class="outerbox">
+        <div class="innerleft">
+            <p class="location"></p>
+            <p id="date"> </p>
+            <p id="time"></p>
+            <img class="weather-icon"
+                src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQG6YtYZyt8up1jggsdAwtkvZNd5H5vy0W3WIcFs8yYXX_jbA1LJr60GWpjWxxv8GZ5I028Mm4xKk9TgIsfMXdWsX01lQ=s2560">
+            <p class="temp"> 10°C</p>
+            <p class="sunny"> Sunny</p>
+        </div>
+        <div class="innerright">
+            <div class="upper">
+                <div class="column1">
+                    <!-- pressure -->
+                    <div class="factors">
+                        <div class="upper-icons-wrapper">
+                            <i class="fa fa-tachometer upper-section-icons"></i>
+                        </div>
+                        <div class="label-value">
+                            <p id="pressure" class="label">Pressure</p>
+                            <p id="pressurevalue">1</p>
+                        </div>
+                    </div>
+                    <div class="factors">
+                        <!-- wind -->
+                        <div class="upper-icons-wrapper">
+                            <i class="fa fa-wind upper-section-icons"></i>
+                        </div>
+                        <div class="label-value">
+                            <p id="Wind" class="label">Wind speed</p>
+                            <p id="windvalue">1</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- humidity -->
+                <div class="column2">
+                    <div class="factors">
+                        <div class="upper-icons-wrapper">
+                            <i class="fa fa-droplet upper-section-icons"></i>
+                        </div>
+                        <div class="label-value">
+                            <p id="humidity" class="label">Humidity</p>
+                            <p id="humidityvalue">1</p>
+                        </div>
+                    </div>
+                    <!-- precipitation -->
+                    <div class="factors">
+                        <div class="upper-icons-wrapper">
+                            <i class="fa fa-cloud-rain upper-section-icons"></i>
+                        </div>
+                        <div class="label-value">
+                            <p id="precipitation" class="label">Precipitation</p>
+                            <p id="precipitationvalue">1</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class=" division3 yesterday">
+                    <h4 id="yesterday"> Friday</h4>
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQG6YtYZyt8up1jggsdAwtkvZNd5H5vy0W3WIcFs8yYXX_jbA1LJr60GWpjWxxv8GZ5I028Mm4xKk9TgIsfMXdWsX01lQ=s2560"
+                        class="img">
+                    <p> 10C</p>
+                </div>
+                <div class=" division3 today">
+                    <div class="day">
+                        <h4 id="today"> Saturday</h4>
+                    </div>
+                    <div class="timings">
+                        <div class="time ten">
+                            <p> 10AM</p>
+                            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQG6YtYZyt8up1jggsdAwtkvZNd5H5vy0W3WIcFs8yYXX_jbA1LJr60GWpjWxxv8GZ5I028Mm4xKk9TgIsfMXdWsX01lQ=s2560"
+                                class="img">
+                            <p> 10C</p>
+                        </div>
+                        <div class="time two">
+                            <p> 2PM</p>
+                            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQG6YtYZyt8up1jggsdAwtkvZNd5H5vy0W3WIcFs8yYXX_jbA1LJr60GWpjWxxv8GZ5I028Mm4xKk9TgIsfMXdWsX01lQ=s2560"
+                                class="img">
+                            <p> 2C</p>
+                        </div>
+                        <div class="time eight">
+                            <p> 8PM</p>
+                            <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQG6YtYZyt8up1jggsdAwtkvZNd5H5vy0W3WIcFs8yYXX_jbA1LJr60GWpjWxxv8GZ5I028Mm4xKk9TgIsfMXdWsX01lQ=s2560"
+                                class="img">
+                            <p> 8C</p>
+                        </div>
+                    </div>
+                    <p> (dummy text)</p>
+                </div>
+                <div class="'division3 tomorrow">
+                    <h4 id="tomorrow"> Sunday</h4>
+                    <img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYQG6YtYZyt8up1jggsdAwtkvZNd5H5vy0W3WIcFs8yYXX_jbA1LJr60GWpjWxxv8GZ5I028Mm4xKk9TgIsfMXdWsX01lQ=s2560"
+                        class="img">
+                    <p> 8C</p>
+
+                </div>
+            </div>
+            <div id='toast-message' class="toast"></div>
+        </div>
+
+        <script src="Utsha_Bhandari_2408886.js"></script>
+</body>
+<footer id="copyright">&copy; Utsha Bhandari 2408886</footer>
+
+</html>
